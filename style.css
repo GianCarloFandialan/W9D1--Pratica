@@ -37,12 +37,12 @@ body{
 }
 
 /*Personalizzo la sezione della navbar dell'utente attuale"*/
-#personalAvatar{
+.personalAvatar{
     height: 40px;
     border-radius: 20px;
 }
 
-#avatarNotification{
+.avatarNotification{
     background-color: #1acb98;
     width: 11px;
     height: 11px;
@@ -52,6 +52,24 @@ body{
     border: 2px solid white;
 }
 
+.dropdwon-avatar::after {
+    display: none;
+}
+
+.dropdown-menu-end[data-bs-popper] {
+    top: 100%;
+    left: -500%;
+    margin-top: var(--bs-dropdown-spacer);
+
+}
+
+.email{
+    color: #a9a4b9;
+}
+
+.dropdown-item .bi-star{
+    color: black;
+}
 /*Inizio a stilizzare il jumbotron*/
 #jumbotron{
     background-color: #7550fe;
@@ -64,6 +82,10 @@ body{
 
 #browseButton{
     background-color: #1acb98;
+}
+
+.heroImg{
+    width: 100%;
 }
 
 /*Ora stilizzo le informazioni presenti sotto il jumbotron*/
@@ -127,4 +149,3 @@ body{
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f5f4f8' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
 }
 
-/*Stilizzo il footer*/

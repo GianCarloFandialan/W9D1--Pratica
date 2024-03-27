@@ -9,18 +9,59 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-md">
             <div class="container-fluid">
                 <img src="assets/logo.svg" alt="logo" >
-
                 <div class="d-flex">
                     <div id="bellContainer" class="position-relative mx-3 d-md-none">
                         <i class="bi bi-bell position-absolute top-50 start-50 translate-middle"></i>
                         <div id="bellNotification" class="position-absolute"></div>
                     </div>
-                    <div class="position-relative d-md-none me-3 ">
-                        <img src="assets/avatar-1.jpg" alt="avatar-1" id="personalAvatar">
-                        <div id="avatarNotification" class="position-absolute "></div>
+                    <div class="position-relative d-md-none me-3">
+                        <div class="dropdown">
+                            <a class="dropdown-toggle dropdwon-avatar" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="assets/avatar-1.jpg" alt="avatar-1" class="personalAvatar">
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-sm-start">
+                                <li>
+                                    <div class="dropdown-item d-flex align-items-center">
+                                        <div class="w-25 me-3">
+                                            <div class="position-relative">
+                                                <img src="assets/avatar-1.jpg" alt="avatar-1" class="personalAvatar">
+                                                <div class="avatarNotification position-absolute"></div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-center">
+                                            <p class="mb-0 fw-bold ">Annette Black</p>
+                                            <p class="email mb-0">annette@geeksui.com</p>
+                                        </div>
+                                    </div> 
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="bi bi-person"></i> Profile
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="bi bi-star"></i> Subscription
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="bi bi-gear"></i> Settings
+                                    </a>
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="bi bi-power"></i> Sign Out
+                                    </a>
+                                </li>
+                              </ul>
+                        </div>
+                        <div class="avatarNotification position-absolute"></div>
                     </div>
                     <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -73,14 +114,57 @@
                             </ul>
                         </li>
                     </ul>
-                    <div class="d-flex">
+                    <div class=" d-none d-md-flex">
                         <div id="bellContainer" class="position-relative mx-3 ">
                             <i class="bi bi-bell position-absolute top-50 start-50 translate-middle"></i>
                             <div id="bellNotification" class="position-absolute"></div>
                         </div>
-                        <div class="position-relative ">
-                            <img src="assets/avatar-1.jpg" alt="avatar-1" id="personalAvatar">
-                            <div id="avatarNotification" class="position-absolute "></div>
+                        <div class="position-relative">
+                            <div class="dropdown">
+                                <a class="dropdown-toggle dropdwon-avatar" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="assets/avatar-1.jpg" alt="avatar-1" class="personalAvatar">
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-sm-start">
+                                    <li>
+                                        <div class="dropdown-item d-flex align-items-center">
+                                            <div class="w-25 me-3">
+                                                <div class="position-relative">
+                                                    <img src="assets/avatar-1.jpg" alt="avatar-1" class="personalAvatar">
+                                                    <div class="avatarNotification position-absolute"></div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <p class="mb-0 fw-bold ">Annette Black</p>
+                                                <p class="email mb-0">annette@geeksui.com</p>
+                                            </div>
+                                        </div> 
+                                    </li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="bi bi-person"></i> Profile
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="bi bi-star"></i> Subscription
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="bi bi-gear"></i> Settings
+                                        </a>
+                                    </li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="bi bi-power"></i> Sign Out
+                                        </a>
+                                    </li>
+                                  </ul>
+                            </div>
+
+                            <div class="avatarNotification position-absolute"></div>
                         </div>
                         
                     </div>
@@ -104,8 +188,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6">
-                    <img src="assets/hero-img.png" class="img-fluid" alt="hero-img" >
+                <div class="col-12 col-md-6 d-flex align-items-end">
+                    <img src="assets/hero-img.png" class="img-fluid d-block d-md-none" alt="hero-img" >
+                    <img src="assets/hero-img.png" class="d-none d-md-block d-lg-none align-self-center heroImg" alt="hero-img">
+                    <img src="assets/hero-img.png" class=" d-none d-lg-block align-self-center heroImg" alt="hero-img">
                 </div>
             </div>
             <div class="container-fluid bg-white py-3 page-padding ">
